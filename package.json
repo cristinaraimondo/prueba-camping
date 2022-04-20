@@ -1,0 +1,38 @@
+{
+  "name": "camping-servidor",
+  "version": "0.1.0",
+  "description": "Servidor node.js Sistema Camping de General Belgrano",
+  "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.4"
+  },
+  "scripts": {
+    "start": "node server.js nolog nows",
+    "server": "nodemon server.js",
+    "test": "jest",
+    "kdb": "mongo camping --eval \"printjson(db.dropDatabase())\""
+  },
+  "dependencies": {
+    "ajv": "^6.5.3",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.13",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.7.1",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.4"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
